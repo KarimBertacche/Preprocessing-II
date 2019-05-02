@@ -4,8 +4,7 @@
     margin: 0 auto;
 }
 
-
-.flex-layout(@justify: flex-start, @align: flex-start, @direction: row, @wrap: no-wrap) {
+.flex-layout(@justify: flex-start, @align: flex-start, @direction: row, @wrap: nowrap) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
@@ -23,7 +22,7 @@
 
 .custom-btn() {
     font-size: 1.5rem;
-    background-color: darken(@eastern-blue, 10%);
+    background-color: @eastern-blue;
     border-radius: 15px;
     padding: 12px 1rem;
     text-align: center;
