@@ -185,7 +185,7 @@ img {
   border-bottom: 2px dashed #C0C0C0;
   padding: 1.5rem 7rem;
 }
-@media (max-width: 540px) {
+@media (max-width: 800px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -210,7 +210,7 @@ img {
 .header .nav-bar a:hover {
   border-bottom: 2px solid #17A2B8;
 }
-@media (max-width: 540px) {
+@media (max-width: 800px) {
   .header .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -288,13 +288,17 @@ img {
   padding-left: 0;
 }
 @media (max-width: 540px) {
+  .home .inverse-content .img-content {
+    padding: 0;
+  }
+}
+@media (max-width: 540px) {
   .home .inverse-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-    padding: 0;
   }
 }
 .home .content-destination {
@@ -350,8 +354,9 @@ img {
 }
 .home .content-pick .destination .btn:hover {
   animation-name: bounce;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in;
+  box-shadow: 0 10px 20px #212529;
 }
 @media (max-width: 540px) {
   .home .content-pick {
@@ -361,6 +366,64 @@ img {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+}
+.home .form-section {
+  padding: 3rem;
+  margin: 3rem 10rem 0;
+  background-color: #17A2B8;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (max-width: 540px) {
+  .home .form-section {
+    margin: 0;
+  }
+}
+.home .form-section .form-label {
+  display: block;
+  font-size: 1.9rem;
+  margin: 10px 0 5px;
+}
+.home .form-section input {
+  width: 50%;
+  height: 30px;
+  border: 3px solid #FFEBCD;
+  border-radius: 5px;
+}
+.home .form-section input:focus {
+  outline: 0;
+  border: 3px solid #DC143C;
+}
+.home .form-section input:valid {
+  border: 3px solid #ADFF2F;
+}
+.home .form-section .selection {
+  margin-top: 20px;
+  width: 50%;
+  height: 30px;
+}
+.home .form-section textarea {
+  margin-top: 30px;
+  width: 90%;
+}
+.home .form-section .btn-submit {
+  font-size: 1.5rem;
+  background-color: #17A2B8;
+  border-radius: 15px;
+  padding: 12px;
+  text-align: center;
+  color: #212529;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: -10px 30px;
+  border: 3px solid #FFFFFF;
+  width: 150px;
+  font-size: 2rem;
+}
+.home .form-section .btn-submit:hover {
+  background-color: #4cd3e9;
+  cursor: pointer;
 }
 .footer {
   max-width: 800px;

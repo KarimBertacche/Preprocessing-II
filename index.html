@@ -74,6 +74,27 @@
             <div class="btn">Sign Me Up!</div>
           </div>
         </section>
+        <section class="form-section">
+          <form action="/" method="post">
+            <label class="form-label" for="name">Name:</label>
+            <input type="text" name ="name" id="name" placeholder="Type your name" required><br>
+            <label class="form-label" for="surname">Surname:</label>
+            <input type="text" name ="surname" id="surname" placeholder="Type your surname" required><br>
+            <label class="form-label" for="email">Your email:</label>
+            <input type="email" name="email" id="email" placeholder="Your email address" required><br>
+            <label class="form-label" for="tel">Your tel:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Your telephone number" required><br>
+            <label class="form-label" for="pass">Password:</label>
+            <input type="password" name ="pass" id="pass" placeholder="Input your password" required><br>
+            <select class="selection" name="vacations">
+              <option value="sun">Fun In The Sun</option>
+              <option value="mount" selected>Mountain Excursion</option>
+              <option value="island">Island Getaway</option>
+            </select><br>
+            <textarea rows="4" placeholder="Leave a comment"></textarea><br>
+            <button class="btn-submit" type="submit">Submit</button>
+          </form>
+        </section>
       </main>
     </div>
 
