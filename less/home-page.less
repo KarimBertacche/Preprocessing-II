@@ -2,6 +2,10 @@
 
   .main-section {
     padding: @XlargePaddingY;
+
+    @media @mobile {
+      padding: @smallPaddingY;
+    }
   }
 
   .top-section {
@@ -104,7 +108,7 @@
       }
 
       .btn {
-        .custom-btn();
+        .custom-btn(@eastern-blue, @white);
       }
     }
 
