@@ -109,6 +109,12 @@
 
       .btn {
         .custom-btn(@eastern-blue, @white);
+        transition: all 1s;
+        backface-visibility: none;
+      
+        &:hover {
+          .bounce(bounce, 1s, ease-in);
+        }
       }
     }
 
@@ -116,4 +122,4 @@
       .flex-layout(space-between, center, column);
     }
   }
-}// home
+}

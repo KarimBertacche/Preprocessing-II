@@ -34,3 +34,13 @@
         cursor: pointer;
     }
 }
+
+.bounce(@name, @duration, @timing) {
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-timing-function: @timing;
+}
+
+.line-under(@color) {
+    border-bottom: 2px solid @color;
+}
