@@ -1,1 +1,47 @@
-// Mixins in here
+.container-width() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-layout(@justify: flex-start, @align: flex-start, @direction: row, @wrap: nowrap) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+}
+
+.nav-border() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.nav-border-top( )  {
+    border-top: 2px dashed @navigation-border;
+}
+
+.custom-btn(@bgColor: @eastern-blue, @color: @shark, @pad: 12px) {
+    font-size: 1.5rem;
+    background-color: @bgColor;;
+    border-radius: 15px;
+    padding: @pad;
+    text-align: center;
+    color: @color;
+    font-weight: bold;
+
+    &:hover {
+        background-color: lighten(@eastern-blue, 20%);
+        cursor: pointer;
+    }
+}
+
+.bounce(@name, @duration, @timing) {
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-timing-function: @timing;
+    box-shadow: 0 10px 20px @shark;
+}
+
+.line-under(@color) {
+    border-bottom: 2px solid @color;
+}

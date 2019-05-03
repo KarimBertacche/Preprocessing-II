@@ -8,6 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  background-color: @shark;
 }
 
 h1, h2, h3, h4, h5 {
@@ -30,8 +31,13 @@ h4 {
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    font-size: 1.37rem;
+    letter-spacing: .2px;
+  }
 }
 
 img {
@@ -40,7 +46,6 @@ img {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  .container-width();
+  background-color: @white;
 }
